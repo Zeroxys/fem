@@ -4,18 +4,7 @@ const url = 'http://api.invent.mx/v1/actitudfem/node.json/22360f3a2e03f847acf533
 
 const Axios = {
   getData : () => {
-    axios.get(url,
-      {
-        method: 'GET',
-        mode: 'no-cors',
-        headers: {
-          'Access-Control-Allow-Origin': '*',
-          'Content-Type': 'application/json',
-        },
-
-        withCredentials: true,
-        credentials: 'same-origin',
-      })
+    axios.get(url,{})
       .then( (res) => console.log(res))
       .catch( (err) => console.log(err))
   }
